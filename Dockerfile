@@ -1,4 +1,4 @@
-FROM node:18-alpine as build
+FROM node:20-alpine as build
 
 RUN mkdir -p /opt/build
 WORKDIR /opt/build
@@ -11,7 +11,7 @@ RUN npm run build
 
 # --- --- ---
 
-FROM node:18-alpine
+FROM node:20-alpine
 
 ENV NODE_ENV production
 

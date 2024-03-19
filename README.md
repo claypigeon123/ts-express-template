@@ -1,6 +1,6 @@
 ## TypeScript Express Template
 
-A simple skeleton with sensible defaults to start developing with TS + Express.
+A simple skeleton with sensible defaults to start developing with TS + Express (node.js 20).
 Includes:
 
 - Logging with Winston
