@@ -11,10 +11,18 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
-        "isolatedModules": true
+        "isolatedModules": true,
+        "types": [
+            "node",
+            "vitest/globals"
+        ]
     },
     "include": [
         "src",
-        "environment.d.ts"
+        "environment.d.ts",
+        "test"
+    ],
+    "exclude": [
+        "node_modules"
     ]
 }
