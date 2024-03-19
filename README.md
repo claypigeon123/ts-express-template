@@ -8,3 +8,4 @@ Includes:
 - Extended response headers via Helmet
 - Esbuild to produce a single JS file as the production build
 - End-to-end Dockerfile
+- Testing with Vitest and Supertest
