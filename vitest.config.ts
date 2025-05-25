@@ -7,7 +7,7 @@ export default defineConfig({
         globals: true,
         environment: 'node',
         coverage: {
-            provider: 'v8',
+            provider: 'istanbul',
             reporter: ['lcov', 'text', 'json', 'html']
         },
         testTimeout: 50000

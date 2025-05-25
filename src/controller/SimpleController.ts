@@ -7,7 +7,7 @@ const log = createLogger('SimpleController');
 
 SimpleController.route("/").get((req, res) => {
     log.debug('Received hello request');
-    return res.status(200).json({ message: 'hello' });
+    res.status(200).json({ message: 'hello' });
 })
 
 export default SimpleController;

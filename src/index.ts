@@ -11,7 +11,7 @@ import { createLogger } from './util/LoggerFactory';
 
 const app = express();
 const server = http.createServer(app);
-const log = createLogger('entrypoint');
+const log = createLogger('Entrypoint');
 
 app.use(helmet({ hidePoweredBy: true }));
 app.use(cors({
