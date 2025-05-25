@@ -23,12 +23,12 @@ app.use(cors({
 }));
 app.use(json());
 app.use(urlencoded({ extended: true }));
-app.set("port", process.env.SERVER_PORT ?? 3000);
+app.set('port', process.env.SERVER_PORT ?? 3000);
 
-app.use("/", SimpleController);
+app.use('/', SimpleController);
 
-server.listen(app.get("port"), () => {
-    log.info(`Application started on port ${app.get("port")}`);
+server.listen(app.get('port'), () => {
+    log.info(`Application started on port ${app.get('port')}`);
 });
 
 export default app;
