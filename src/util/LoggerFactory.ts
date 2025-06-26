@@ -8,9 +8,7 @@ const customFormat = printf(({ level, message, timestamp, label }) => {
 });
 
 export const createLogger = (name: string): Logger => createWinstonLogger({
-    level: process.env.LOGGING_LEVEL
-        ? process.env.LOGGING_LEVEL
-        : process.env.NODE_ENV === 'production' ? 'info' : 'debug',
+    level: process.env.LOGGING_LEVEL ?? (process.env.NODE_ENV === 'production' ? 'info' : 'debug'),
     format: combine(timestamp(), label({ label: name }), customFormat),
     transports: [
         new transports.Console()
